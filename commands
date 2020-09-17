@@ -1,0 +1,11 @@
+To Use the Git in LINUX use the following commands
+
+1. To Check the git version
+    -> git --version
+
+2. To create the repository
+    -> mkdir repo
+    -> git init
+
+3. To Check the status
+    -> git status
