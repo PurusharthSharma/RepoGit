@@ -1,11 +1,30 @@
-To Use the Git in LINUX use the following commands
+To Use the Git in LINUX use the following commands :-
 
-1. To Check the git version
+1. Check whether the git is installed in your system or not.
     -> git --version
 
 2. To create the repository
-    -> mkdir repo
+    -> mkdir "your repository name"
+
+3. Initialize the git in your Directory
     -> git init
 
-3. To Check the status
-    -> git status
+CREATE NEW REPO IN GITHUB MANUALLY
+
+3. To add the file in your repo
+    -> git add "yourfilename"
+   add message for the commit
+    -> git commit -m "Your Commit Message"
+
+4. Use command to connect to Remote server
+    -> git remote add origin master https://github.com/YourUsername/YourGitRepoName.git
+
+5. Use Pull command before making pull (if its your first push, or someone else has make changes in the repo)
+    -> git pull origin master
+    -> git pull origin master --allow-unrelated-histories (i git pull command throw error use this command)
+   Write the commit Message for Pull
+    -> git commit -m "Yor Pull Message"
+
+6. Use Git Push command to push your code to your repo
+    -> git push -u origin master (master is the name of the branch)
+   
