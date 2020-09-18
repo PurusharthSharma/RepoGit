@@ -3,7 +3,7 @@ To Use the Git in LINUX use the following commands :-
 1. Check whether the git is installed in your system or not.
     -> git --version
 
-2. To create the repository
+2. To create the Directory
     -> mkdir "your repository name"
 
 3. Initialize the git in your Directory
@@ -27,4 +27,26 @@ CREATE NEW REPO IN GITHUB MANUALLY
 
 6. Use Git Push command to push your code to your repo
     -> git push -u origin master (master is the name of the branch)
+
+7. Create a new Branch using the command
+    -> git -b "Your branch name"
+
+8. Switch to any branch
+    -> git checkout "branchname"
+
+9. To commit changes in your branch other than master, use the following commands
+    a. select the branch
+        -> git checkout "branchname"
+    b. add the file
+        -> git add "filename"
+    c. commit the message
+        -> git commit -m "Your commit Mesage"
+    d. push the changes to the branch
+        -> git push -u origin "your branch name"
+
+10. To merge the changes from one branch to another.
+    a. select the branch in which you want to merge
+        -> git checkout master (changes will be merge from any other branch to master)
+        -> git merge "samplebranch" (in this case....all the changes in samplebranch branch will be merged to master branch)
+
    
